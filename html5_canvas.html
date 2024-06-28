@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" style="border: 2px solid green;">
+    </canvas>
+    <canvas id="lineCanvas" style="border: 2px solid green;">
+    </canvas>
+    <canvas id="circleCanvas" style="border: 2px solid green;">
+    </canvas>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.fillText("Hello World",10,50);
+    
+
+        var c = document.getElementById("lineCanvas");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(0, 0);
+        ctx.lineTo(200, 100);
+        ctx.stroke();
+
+        var c = document.getElementById("circleCanvas");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+        ctx.stroke();
+
+        </script>
+
+      <svg width="200" height="200">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow">
+      </svg> 
+
+      <svg width="400" height="120">
+        <rect x="10" y="10" width="200" height="100" stroke="red" stroke-width="6" fill="yellow" />
+      </svg>
+
+      <svg width="400" height="180">
+        <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
+        style="fill:yellow;stroke:black;stroke-width:5;opacity:0.5" />
+      </svg>
+
+      <svg width="300" height="200">
+        <polygon points="100,10 40,198 190,78 10,78 160,198"
+        style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+      </svg>
+
+      <!-- <svg width="600" height="300">
+        <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">Hello SVG</text>
+      </svg> -->
+</body>
+</html>

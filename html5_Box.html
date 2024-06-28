@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .normal{
+            height: 300px;
+            width: 300px;
+            border: 5px solid red;
+            padding: 5px;
+        }
+        .contentBox{
+            height: 300px;
+            width: 300px;
+            border: 5px solid red;
+            padding: 20px;
+            box-sizing: content-box;
+        }
+        .borderBox{
+            height: 300px;
+            width: 300px;
+            border: 5px solid red;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body >
+    <div style="display: flex;">
+        <div class="normal">
+
+        </div> <br>
+        <div class="contentBox">
+    
+        </div>
+        <div class="borderBox">
+    
+        </div>
+    </div>
+     <br><br>
+     <div style="display: grid;">
+        <div class="normal">
+
+        </div> <br>
+        <div class="contentBox">
+    
+        </div>
+        <div class="borderBox">
+    
+        </div>
+    </div>
+    
+</body>
+</html>
